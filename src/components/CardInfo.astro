@@ -1,0 +1,35 @@
+---
+const info = [
+  {
+    title: "conferencias",
+    description:
+      "Participacion activa como conferencias en Congreso Internacional de Valores, Jornada Internacional de Liderazgo e inteligencia emocional, campeonato de oratoria mujeres, congreso emprendedor desde el ser",
+  },
+  {
+    title: "mentorias",
+
+    description:
+      "Mas de 500 personas capacitadas a traves de diversos temas de mentorias en desarrollo personal, sobre tecnicas de trabajo en equipo, manifestacion de abundancia, habilidades de liderazgo, creencias limitantes, comunicacion con estilo, entre otro.",
+  },
+  {
+    title: "escritora",
+    description:
+      "He fomentado parte integrante de dos libros Best Seller, como Coautora. 'El Poder del Amor' Universo de Abundancia vol.2, publicado en nobiembre del 2022. 'El Poder del Compromiso' Quebrando barreras vol.5, publicado en abril del 2023.",
+  },
+];
+---
+
+<section class="grid grid-cols-3 justify-center items-center my-12 gap-4">
+{
+  info.map((item) => (
+    <article class="max-w-sm p-6 bg-[var(--clr-two)] rounded-lg shadow">
+      <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-[var(--clr-one)] capitalize">
+          {item.title}
+        </h5>
+      </a>
+      <p class="mb-3 font-normal text-[var(--clr-four)]">{item.description} </p>
+    </article>
+  ))
+}
+</section>
